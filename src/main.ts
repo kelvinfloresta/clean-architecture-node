@@ -1,13 +1,17 @@
 import restana from 'restana'
+import startServer from './start'
 
-const PORT = 3000
 const app = restana()
+const PORT = 3000
 
 app
   .get('/', (_, res) => {
     res.send('Hello world!')
   })
-  .start(PORT)
-  .then(() => console.log('Running on port:', PORT))
+
+startServer(app, PORT)
+  .catch(e => {
+    throw e
+  })
 
 export default app
