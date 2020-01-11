@@ -4178,9 +4178,9 @@ resolve@1.x, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.12.0,
     path-parse "^1.0.6"
 
 restana@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/restana/-/restana-4.0.5.tgz#b519843308a04a8eb5a4cdfdcdc6eff8f12e3343"
-  integrity sha512-1foXVFbej0ly5dUBP9FdA8HrFhOfapL4vb2N4yN4Hxqg0WmgE3tHLnmx6lTQtdSwuYTzSv7F1BHnL6t/xsjiqw==
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/restana/-/restana-4.0.6.tgz#65be155588aa26001ee4e322a043003488721522"
+  integrity sha512-6JIfXZ+/ROqWcw01Tm3DO/O6Zg2lDRWhefxsSTsUIjwdWlUj9rDIJgg59fYMlvwvqN1saO5IbXZs0jizcbOfaw==
   dependencies:
     "0http" "^2.2.2"
 
