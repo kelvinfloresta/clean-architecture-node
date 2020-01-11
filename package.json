@@ -7,7 +7,9 @@
     "start": "ts-node src/main.ts",
     "test": "jest",
     "test:unit": "npm test -- --watch -c jest-unit.config.js",
-    "test:integration": "npm test -- --watch -c jest-integration.config.js"
+    "test:integration": "npm test -- --watch -c jest-integration.config.js",
+    "test:staged": "npm test -- --findRelatedTests --silent",
+    "test:ci": "npm test -- --coverage --silent"
   },
   "author": "Kelvin Floresta de Andrade",
   "license": "ISC",
@@ -23,7 +25,9 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.0.6",
     "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
     "standard": "^14.3.1",
     "ts-jest": "^24.3.0",
     "typescript": "^3.7.4"
