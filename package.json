@@ -5,7 +5,9 @@
   "main": "main.ts",
   "scripts": {
     "start": "ts-node src/main.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:unit": "npm test -- --watch -c jest-unit.config.js",
+    "test:integration": "npm test -- --watch -c jest-integration.config.js"
   },
   "author": "Kelvin Floresta de Andrade",
   "license": "ISC",
