@@ -1,10 +1,20 @@
 import { Server as HttpServer } from 'http'
+import restana = require('restana')
 
-export interface AvailableServer {
-  start(port: number): Promise<HttpServer>
+export enum AvailableServers {
+  RESTANA = 'RESTANA'
 }
 
-export default async function startServer (app: AvailableServer, port: number): Promise<HttpServer> {
+export type Server<T extends AvailableServers = any> = T extends AvailableServers.RESTANA
+  ? restana.Service<restana.Protocol.HTTP>
+  : {
+    start(port: number): Promise<HttpServer>
+  }
+
+export default async function startServer<T extends AvailableServers> (
+  app: Server<T>,
+  port: number
+): Promise<HttpServer> {
   return app
     .start(port)
     .then(server => {

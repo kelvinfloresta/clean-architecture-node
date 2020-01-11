@@ -3,7 +3,7 @@ import { createServer, Server } from 'http'
 
 const PORT = 3000
 async function makeSut (): Promise<Server> {
-  const server = {
+  const server: any = {
     start: async (port: number) => Promise.resolve(createServer().listen(port))
   }
 
