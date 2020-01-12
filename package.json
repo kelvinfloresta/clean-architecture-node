@@ -9,7 +9,9 @@
     "test:unit": "npm test -- --watch -c jest-unit.config.js",
     "test:integration": "npm test -- --watch -c jest-integration.config.js",
     "test:staged": "npm test -- --findRelatedTests --silent",
-    "test:ci": "npm test -- --coverage --silent"
+    "test:ci": "npm test -- --coverage --silent",
+    "lint:ts": "eslint . --ext .ts",
+    "lint:ts:fix": "npm run lint:ts -- --fix"
   },
   "author": "Kelvin Floresta de Andrade",
   "license": "ISC",
