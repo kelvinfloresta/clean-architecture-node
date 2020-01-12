@@ -19,5 +19,6 @@
       "esnext",
       "DOM"
     ]
-  }
+  },
+  "include": ["./src/"]
 }
