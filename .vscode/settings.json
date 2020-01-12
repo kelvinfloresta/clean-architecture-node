@@ -1,19 +1,16 @@
 {
   "editor.formatOnSave": false,
-  "eslint.autoFixOnSave": true,
+  "eslint.codeActionsOnSave.mode": "all",
   "eslint.validate": [
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
-    }
+    "typescript",
+    "javascript"
   ],
   "workbench.colorCustomizations": {
     "activityBar.background": "#0D332F",
     "titleBar.activeBackground": "#134842",
     "titleBar.activeForeground": "#F5FCFC"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }
