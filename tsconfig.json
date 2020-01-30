@@ -20,5 +20,5 @@
       "DOM"
     ]
   },
-  "include": ["./src/"]
+  "include": ["src", "."]
 }
